@@ -1,0 +1,5 @@
+# Create a file named .env in this directory and paste the following content:
+
+MONGODB_URI=mongodb://localhost:27017/gym-management
+NEXTAUTH_SECRET=supersecretkey123
+NEXTAUTH_URL=http://localhost:3000
