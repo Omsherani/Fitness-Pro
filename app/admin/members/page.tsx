@@ -2,6 +2,9 @@ import { connectToDatabase } from '@/lib/db';
 import User from '@/models/User';
 import { Mail, Search, MoreHorizontal, User as UserIcon } from 'lucide-react';
 
+export const dynamic = "force-dynamic";
+
+
 async function getMembers() {
     await connectToDatabase();
     const members = await User.find({ role: 'member' }).sort({ createdAt: -1 }).limit(20);
