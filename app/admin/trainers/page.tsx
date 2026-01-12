@@ -1,6 +1,11 @@
+
+
 import { connectToDatabase } from '@/lib/db';
 import Trainer from '@/models/Trainer';
 import { Plus, MoreVertical, Star } from 'lucide-react';
+
+export const dynamic = "force-dynamic";
+
 
 async function getTrainers() {
     await connectToDatabase();
